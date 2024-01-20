@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div className="bg-[#f2f5ff] flex flex-row justify-center w-full">
+    <div className="bg-[#f2f5ff] flex flex-row justify-center max-w-7xl">
       <div className="bg-[#f2f5ff] overflow-hidden w-[1440px] h-[3223px]">
         <div className="relative h-[3883px]">
           <div className="h-[1719px] top-[2164px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)] absolute w-[1440px] left-0" />
