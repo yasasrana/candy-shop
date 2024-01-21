@@ -1,5 +1,5 @@
 <template>
-  <div className="bg-[#f2f5ff] flex flex-row justify-center w-full">
+  <div className="bg-[#f2f5ff] flex flex-row w-full">
       <div className="bg-[#f2f5ff] overflow-hidden w-[1440px] h-[2768px]">
         <div className="relative w-[2036px] h-[3256px] left-[-564px]">
           <div className="absolute w-[1440px] h-[1349px] top-[1907px] left-[564px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)]" />
@@ -13,11 +13,10 @@
             alt="Vector"
             src="https://c.animaapp.com/twwqjW46/img/vector.svg"
           />
-          <div className="absolute w-[320px] h-[320px] top-[1460px] left-[1133px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
           <img
-            className="absolute w-[1440px] h-[581px] top-0 left-[564px]"
-            alt="Rectangle"
-            src="https://c.animaapp.com/twwqjW46/img/rectangle-31.png"
+          className="absolute w-[1440px] h-[581px] top-0 left-[564px]"
+          alt="Rectangle"
+          src="https://c.animaapp.com/twwqjW46/img/rectangle-31.png"
           />
           <div className="absolute top-[110px] left-[1424px] [text-shadow:7px_7px_6px_#00000059] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-white text-[96px] tracking-[0] leading-[normal]">
             PRODUCTS
@@ -25,55 +24,26 @@
           <div className="top-[176px] left-[1428px] text-[45px] text-right absolute [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] tracking-[0] leading-[normal]">
             Our Speciality Sweets
           </div>
-          <div className="w-[295px] top-[1346px] left-[746px] text-[24px] absolute [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] tracking-[0] leading-[normal]">
-            Our Speciality Candies
+          <div class="absolute top-[1100px] right-[300px] grid grid-cols-3 gap-7">
+            <div v-for="(item, index) in products" :key="item.id">
+              <div className=" max-w-[320px]  h-[320px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
+              <button @click="handleProductButtonClick(item)" className="w-[295px]  text-[24px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a]  leading-[normal]">
+                {{ item.title }}
+              </button>
+                <div className="w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
+                  Rs.{{ item.price }}
+                </div>
+            </div>
           </div>
-          <div className="top-[1390px] left-[746px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
-            Rs.2500
-          </div>
-          <div className="absolute w-[320px] h-[320px] top-[1002px] left-[734px] bg-[#f2f5ff] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="top-[1346px] left-[1531px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
-            Our Speciality Candies
-          </div>
-          <div className="top-[1390px] left-[1531px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
-            Rs.2500
-          </div>
-          <div className="absolute w-[320px] h-[320px] top-[1002px] left-[1519px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="top-[1346px] left-[1145px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
-            Our Speciality Candies
-          </div>
-          <div className="top-[1390px] left-[1145px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
-            Rs.2500
-          </div>
-          <div className="absolute w-[320px] h-[320px] top-[1002px] left-[1133px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
-          <img
+            <img
             className="h-[366px] top-[618px] left-[564px] absolute w-[1440px]"
             alt="Vector"
             src="https://c.animaapp.com/twwqjW46/img/vector-4.svg"
           />
-          <div className="top-[1804px] left-[746px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
-            Our Speciality Candies
-          </div>
-          <div className="top-[1848px] left-[746px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
-            Rs.2500
-          </div>
-          <div className="absolute w-[320px] h-[320px] top-[1460px] left-[734px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="top-[1804px] left-[1531px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
-            Our Speciality Candies
-          </div>
-          <div className="top-[1848px] left-[1531px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
-            Rs.2500
-          </div>
-          <div className="absolute w-[320px] h-[320px] top-[1460px] left-[1519px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="top-[1804px] left-[1145px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
-            Our Speciality Candies
-          </div>
           <div className="absolute w-[76px] top-[1906px] left-[1729px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
             1....10
           </div>
-          <div className="top-[1848px] left-[1145px] absolute w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
-            Rs.2500
-          </div>
+         
           <img
             className="absolute w-[33px] h-[33px] top-[1905px] left-[1794px]"
             alt="Forward"
@@ -120,10 +90,14 @@
             alt="Candy"
             src="https://c.animaapp.com/twwqjW46/img/candy-shop7-1@2x.png"
           />
-          <div className="absolute w-[144px] top-[768px] left-[912px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
-            Chocaltes
+          <div class="absolute  top-[768px] left-[912px] grid grid-cols-4 gap-16">
+            <div v-for="(item, index) in categories" :key="item.id">
+              <button @click="handlecategoryButtonClick(item)"  className=" hover:text-[#f4346c] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
+                {{ item.title }}
+              </button>  
+            </div>
           </div>
-          <div className="absolute w-[144px] top-[768px] left-[1110px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
+         <!--  <div className="absolute w-[144px] top-[768px] left-[1110px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
             Candy
           </div>
           <div className="absolute w-[144px] top-[768px] left-[1314px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
@@ -131,8 +105,52 @@
           </div>
           <div className="absolute w-[144px] top-[768px] left-[1512px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
             Licorice
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 </template>
+
+
+<script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      Allproducts: [],
+      products: [],
+      categories:[]
+    };
+  },
+  async mounted(){
+    try {
+      const response = await axios.get('http://localhost:3000/categories/');
+      this.categories = response.data
+    } catch (error) {
+      console.log(error);
+    }
+
+    try {
+      const response = await  axios.get('http://localhost:3000/products/');
+      this.products = response.data
+      this.Allproducts = response.data
+    } catch (error) {
+      console.log(error);
+    }
+    
+  },
+  methods: {
+    handleProductButtonClick(item) {
+      const productId = item.id; 
+      this.$router.push({ name: 'product-details', params: { productId}});
+    },
+    handlecategoryButtonClick(categ) {
+      console.log('yes')
+      const products = this.Allproducts; 
+      const newproducts=products.filter(ite=> ite.category_id===categ.id)
+      this.products=newproducts;
+      console.log(this.products)
+    },
+  }
+};
+</script>

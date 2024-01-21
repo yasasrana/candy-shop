@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Signin from '../views/Signin.vue'
-import SignOUt from '../views/SignOut.vue'
+import ProductDetails from '../views/Product_Details.vue'
 import Register from '../views/Register.vue'
 
 const routes = [
@@ -27,9 +27,10 @@ const routes = [
     component: Register
   },
   {
-    path: '/signout',
-    name: 'signout',
-    component: SignOUt
+    path: '/product/:productId',
+    name: 'product-details',
+    component: ProductDetails,
+    props: true,
   }
 ]
 

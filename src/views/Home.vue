@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <div className="bg-[#f2f5ff] flex flex-row justify-center max-w-7xl">
-      <div className="bg-[#f2f5ff] overflow-hidden w-[1440px] h-[3223px]">
+    <div class=" firstlyr bg-[#f2f5ff] flex flex-col ">
+      <div class="secondlyr bg-[#f2f5ff] w-screen  max-w-screen-2xl">
         <div className="relative h-[3883px]">
-          <div className="h-[1719px] top-[2164px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)] absolute w-[1440px] left-0" />
+          <div className="h-[1719px] top-[2164px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)] absolute left-0" />
           <img
-            className="absolute w-[1440px] h-[1178px] top-[1186px] left-0"
+            className="  "
             alt="Union"
             src="../assets/DesignArts/svg/union.svg"
           />
           <img
-            className="h-[611px] top-0 object-cover absolute w-[1440px] left-0"
+            className="h-[611px] top-0 object-cover absolute w-screen left-0"
             alt="Rectangle"
             src="../assets/photos/Home.jpg"
           />
@@ -112,21 +112,21 @@
             alt="Candy"
             src="../assets/photos/candy shop8.png"
           />
-          <div className="absolute top-[1923px] left-[624px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[20px] text-right tracking-[0] leading-[normal]">
+          <button @click="handlefunctionButtonClick" className="absolute top-[1923px] left-[624px] border-0 [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[20px] text-right hover:text-[#f4346c] leading-[normal]">
             Birthday Parties
-          </div>
+          </button>
           <p className="w-[247px] top-[1958px] left-[571px] text-[#69696b] text-[15px] text-center absolute [font-family:'Actor',Helvetica] font-normal tracking-[0] leading-[normal]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. .
           </p>
-          <div className="absolute top-[1923px] left-[1018px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[20px] text-right tracking-[0] leading-[normal]">
+          <button button @click="handlefunctionButtonClick" className="absolute top-[1923px] border-0 left-[1018px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[20px] text-right hover:text-[#f4346c] leading-[normal]">
             Private Functions
-          </div>
-          <p className="w-[247px] top-[1958px] left-[981px] text-[#69696b] text-[15px] text-center absolute [font-family:'Actor',Helvetica] font-normal tracking-[0] leading-[normal]">
+          </button>
+          <p className="w-[247px]  top-[1958px] left-[981px] text-[#69696b] text-[15px] text-center absolute [font-family:'Actor',Helvetica] font-normal tracking-[0] leading-[normal]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. .
           </p>
-          <div className="absolute top-[1916px] left-[244px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[20px] text-right tracking-[0] leading-[normal]">
+          <button @click="handleShopButtonClick" className="absolute top-[1916px] left-[244px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[20px] text-center  border-0 hover:text-[#f4346c]">
             Sweet Shop
-          </div>
+          </button>
           <p className="w-[247px] top-[1951px] left-[169px] text-[#69696b] text-[15px] text-center absolute [font-family:'Actor',Helvetica] font-normal tracking-[0] leading-[normal]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. .
           </p>
@@ -179,9 +179,38 @@
   </div>
 </template>
 
+
+<style scoped>
+  .home {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    .firstlyr {
+      max-width: 1440px;
+    }
+  }
+
+  @media (min-width: 1921px) {
+    .firstlyr {
+      max-width: 1920px;
+    }
+  }
+
+</style>
+
 <script>
 export default {
   name: "Home",
+  methods: {
+    handleShopButtonClick() {
+      this.$router.push('/about');
+    },
+    handlefunctionButtonClick() {
+      this.$router.push('/register');
+    },
+  },
 };
 </script>
 

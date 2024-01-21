@@ -25,14 +25,13 @@
             src="https://c.animaapp.com/CY8cwYGc/img/2201-i518-025-s-m005-c12-1@2x.png"
           />
           <p className="absolute top-[205px] left-[735px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] text-right tracking-[0] leading-[normal]">
-            Keto Bars - 12 Bars
+            {{product.title}}
           </p>
           <p className="absolute w-[540px] top-[283px] left-[741px] [font-family:'Actor',Helvetica] font-normal text-[#001f3eb0] text-[20px] tracking-[0] leading-[normal]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
+            {{product.description}}
           </p>
           <div className="absolute w-[295px] top-[423px] left-[735px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[48px] tracking-[0] leading-[normal] whitespace-nowrap">
-            Rs.2500
+            Rs.{{product.price}}
           </div>
           <img
             className="absolute w-[40px] h-[50px] top-[495px] left-[1335px]"
@@ -74,13 +73,26 @@
     </div>
 </template>
 
-<!-- <script>
-
-
+<script>
+import axios from 'axios';
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  name: 'Product_Details',
+  data() {
+    return {
+      product: {},
+    };
+  },
+  props: ['productId'],
+  async mounted() {
+    try {
+      const response = await axios.get(`http://localhost:3000/products/${this.productId}`);
+      this.product = response.data;
+     // console.error(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  },
+  
+  
 }
-</script> -->
+</script>

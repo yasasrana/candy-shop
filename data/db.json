@@ -1,0 +1,275 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "category_id": "1",
+        "title": "Premium Dark Chocolate Bar",
+        "description": "Indulge in the finest dark chocolate with a smooth and rich flavor.",
+        "price": "2500.00"
+      },
+      {
+        "id": "2",
+        "category_id": "1",
+        "title": "Hazelnut Crunch Milk Chocolate",
+        "description": "Creamy milk chocolate with a crunchy layer of caramelized hazelnuts.",
+        "price": "2400.00"
+      },
+      {
+        "id": "3",
+        "category_id": "1",
+        "title": "White Chocolate Fruit Medley",
+        "description": "Delicious white chocolate with a burst of assorted fruity goodness.",
+        "price": "2600.00"
+      },
+      {
+        "id": "4",
+        "category_id": "1",
+        "title": "Artisanal Chocolate Truffle Assortment",
+        "description": "An exquisite assortment of chocolate truffles with assorted fillings.",
+        "price": "2800.00"
+      },
+      {
+        "id": "5",
+        "category_id": "1",
+        "title": "Caramelized Almond Milk Chocolate",
+        "description": "Velvety milk chocolate with crunchy caramelized almonds for a delightful texture.",
+        "price": "2700.00"
+      },
+      {
+        "id": "6",
+        "category_id": "1",
+        "title": "Sea Salt Dark Chocolate Squares",
+        "description": "Decadent dark chocolate squares infused with a hint of sea salt for a unique twist.",
+        "price": "2600.00"
+      },
+      {
+        "id": "7",
+        "category_id": "1",
+        "title": "Exotic Spice Chocolate Bars",
+        "description": "Handcrafted chocolate bars with a blend of exotic spices for a sophisticated flavor.",
+        "price": "2900.00"
+      },
+      {
+        "id": "8",
+        "category_id": "1",
+        "title": "Luxury Chocolate Assortment",
+        "description": "A premium assortment of chocolates for the true connoisseur.",
+        "price": "3000.00"
+      },
+      {
+        "id": "9",
+        "category_id": "1",
+        "title": "Milk Chocolate Caramel Pralines",
+        "description": "Velvety milk chocolate pralines with a soft caramel center for a luscious experience.",
+        "price": "2700.00"
+      },
+      {
+        "id": "10",
+        "category_id": "1",
+        "title": "Dark Chocolate Orange Zest Delight",
+        "description": "Dark chocolate with a twist of orange zest for a citrusy and sophisticated delight.",
+        "price": "2800.00"
+      },
+      {
+        "id": "11",
+        "category_id": "4",
+        "title": "Classic Black Licorice Twists",
+        "description": "Enjoy the timeless taste of classic black licorice twists.",
+        "price": "2200.00"
+      },
+      {
+        "id": "12",
+        "category_id": "4",
+        "title": "Strawberry Burst Red Licorice Laces",
+        "description": "Red licorice laces bursting with the sweet flavor of ripe strawberries.",
+        "price": "2100.00"
+      },
+      {
+        "id": "13",
+        "category_id": "4",
+        "title": "Fruity Licorice Bites Assortment",
+        "description": "Soft and chewy licorice bites in assorted fruity flavors for a vibrant snacking experience.",
+        "price": "2300.00"
+      },
+      {
+        "id": "14",
+        "category_id": "4",
+        "title": "Exotic Anise and Herb Licorice Twists",
+        "description": "Experience licorice twists with a hint of anise and herbs for a unique and bold flavor.",
+        "price": "2400.00"
+      },
+      {
+        "id": "15",
+        "category_id": "4",
+        "title": "Gourmet Licorice Ropes",
+        "description": "Gourmet licorice ropes covered in a dusting of sweet sugar for a delightful sweetness.",
+        "price": "2300.00"
+      },
+      {
+        "id": "16",
+        "category_id": "4",
+        "title": "Minty Licorice Bites",
+        "description": "Licorice bites with a surprising burst of minty freshness for a refreshing taste.",
+        "price": "2200.00"
+      },
+      {
+        "id": "17",
+        "category_id": "4",
+        "title": "Tangy Licorice Wheels",
+        "description": "Tangy licorice wheels with a chewy and satisfying texture.",
+        "price": "2100.00"
+      },
+      {
+        "id": "18",
+        "category_id": "4",
+        "title": "Sugar-Free Licorice Twists",
+        "description": "Enjoy guilt-free snacking with sugar-free licorice twists.",
+        "price": "2300.00"
+      },
+      {
+        "id": "19",
+        "category_id": "4",
+        "title": "Fruity Licorice Drops",
+        "description": "Licorice drops with a surprising burst of fruity goodness.",
+        "price": "2400.00"
+      },
+      {
+        "id": "20",
+        "category_id": "4",
+        "title": "Sour Licorice Straws",
+        "description": "Sour licorice straws for those who crave a tangy twist.",
+        "price": "2500.00"
+      },
+      {
+        "id": "21",
+        "category_id": "3",
+        "title": "Assorted Vibrant Jelly Beans",
+        "description": "Assorted jelly beans with vibrant colors and a medley of fruity flavors.",
+        "price": "1800.00"
+      },
+      {
+        "id": "22",
+        "category_id": "3",
+        "title": "Tropical Fruit Gourmet Jelly Beans",
+        "description": "Gourmet jelly beans in a variety of tropical fruit flavors for a taste of paradise.",
+        "price": "1900.00"
+      },
+      {
+        "id": "23",
+        "category_id": "3",
+        "title": "Fizzy Twist Jelly Beans",
+        "description": "Jelly beans with a fizzy twist, perfect for a fun and exciting snacking experience.",
+        "price": "1700.00"
+      },
+      {
+        "id": "24",
+        "category_id": "3",
+        "title": "Classic Chewy Jelly Beans",
+        "description": "Classic jelly beans with a sweet and chewy texture for a timeless treat.",
+        "price": "1600.00"
+      },
+      {
+        "id": "25",
+        "category_id": "3",
+        "title": "Sour Burst Jelly Beans",
+        "description": "Jelly beans with a burst of sourness to tantalize your taste buds.",
+        "price": "1700.00"
+      },
+      {
+        "id": "26",
+        "category_id": "3",
+        "title": "Fruity and Creamy Mix Jelly Beans",
+        "description": "Jelly beans in a mix of fruity and creamy flavors for a delightful and balanced taste.",
+        "price": "1800.00"
+      },
+      {
+        "id": "27",
+        "category_id": "3",
+        "title": "Sugar-Free Delight Jelly Beans",
+        "description": "Enjoy guilt-free snacking with sugar-free jelly beans.",
+        "price": "1900.00"
+      },
+      {
+        "id": "28",
+        "category_id": "3",
+        "title": "Exotic Gourmet Jelly Beans",
+        "description": "Jelly beans with a gourmet twist, featuring unique and exotic flavors.",
+        "price": "2000.00"
+      },
+      {
+        "id": "29",
+        "category_id": "3",
+        "title": "Spicy and Sweet Surprise Jelly Beans",
+        "description": "Jelly beans with a surprise assortment of spicy and sweet notes for a unique experience.",
+        "price": "2100.00"
+      },
+      {
+        "id": "30",
+        "category_id": "3",
+        "title": "Playful Shape Jelly Beans",
+        "description": "Jelly beans in fun and whimsical shapes for a playful and entertaining snacking experience.",
+        "price": "2200.00"
+      },
+      {
+        "id": "31",
+        "category_id": "2",
+        "title": "Nostalgic Traditional Sweets Assortment",
+        "description": "An assortment of traditional sweets with nostalgic flavors for a trip down memory lane.",
+        "price": "2000.00"
+      },
+      {
+        "id": "32",
+        "category_id": "2",
+        "title": "Chewy and Crunchy Sweets Mix",
+        "description": "Satisfy your sweet tooth with a mix of chewy and crunchy sweets for a delightful contrast.",
+        "price": "2100.00"
+      },
+      {
+        "id": "33",
+        "category_id": "2",
+        "title": "Colorful and Flavorful Sweets",
+        "description": "Colorful and flavorful sweets that are perfect for sharing and brightening your day.",
+        "price": "2200.00"
+      },
+      {
+        "id": "34",
+        "category_id": "2",
+        "title": "Gourmet Sweets with Unique Flavors",
+        "description": "Indulge in a variety of gourmet sweets with unique and irresistible flavor profiles.",
+        "price": "2300.00"
+      },
+      {
+        "id": "35",
+        "category_id": "2",
+        "title": "Modern Twist Classic Sweets",
+        "description": "Classic sweets with a modern twist, featuring innovative and surprising ingredients.",
+        "price": "2400.00"
+      },
+      {
+        "id": "36",
+        "category_id": "2",
+        "title": "Premium Handcrafted Sweets",
+        "description": "Handcrafted sweets with premium ingredients for an elevated and luxurious snacking experience.",
+        "price": "2500.00"
+      }
+    ],
+    "categories": [
+      {
+        "id": "1",
+        "title": "chocolate"
+      },
+      {
+        "id": "2",
+        "title": "Sweets"
+      },
+      {
+        "id": "3",
+        "title": "Jelly Beans"
+      },
+      {
+        "id": "4",
+        "title": "Licorice"
+      }
+    ]
+  }
+  
