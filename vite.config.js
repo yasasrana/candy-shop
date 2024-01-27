@@ -7,6 +7,7 @@ export default defineConfig({
   alias:{
     '@' : path.resolve(__dirname, './src')
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  assetsInclude:"**/*.Vue"
 
 })

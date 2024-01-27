@@ -1,38 +1,38 @@
 <template>
   <div class="home">
-    <div class=" firstlyr bg-[#f2f5ff] flex flex-col ">
-      <div class="secondlyr bg-[#f2f5ff] w-screen  max-w-screen-2xl">
-        <div className="relative h-[3883px]">
-          <div className="h-[1719px] top-[2164px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)] absolute left-0" />
+    <div class=" firstlyr bg-[#f2f5ff] w-full ">
+     
+        <div className="relative md:w-[1160px] lg:w-[1024px] xl:w-[1440px] 2xl:w-[2560px] h-[3883px]">
+          <div className="h-[1719px] md:w-[1160px] lg:w-[1024px] xl:w-[1440px] 2xl:w-[2560px] top-[2164px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)] absolute left-0" />
           <img
             className="  "
             alt="Union"
             src="../assets/DesignArts/svg/union.svg"
           />
           <img
-            className="h-[611px] top-0 object-cover absolute w-screen left-0"
+            className="h-[611px] top-0 object-cover absolute lg:w-[1024px] xl:w-[1440px] 2xl:w-[2560px] left-0"
             alt="Rectangle"
             src="../assets/photos/Home.jpg"
           />
-          <div className="absolute top-[53px] left-[780px] [text-shadow:7px_7px_6px_#00000059] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-white text-[96px] tracking-[0] leading-[normal]">
+          <div className="absolute  top-[53px] md:left-[780px] lg:left-[750px] text-[85px] xl:left-[860px] 2xl:left-[1900px] [text-shadow:7px_7px_6px_#00000059] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-white text-[96px] tracking-[0] leading-[normal]">
             CANDY SHOP
           </div>
-          <p className="absolute top-[128px] left-[900px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] text-right tracking-[0] leading-[normal]">
+          <p className="absolute  top-[128px]  md:left-[780px] lg:left-[750px] top-[228px]  xl:left-[990px] text-[43px]  2xl:left-[1900px] text-[60px]  [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a]  text-right tracking-[0] leading-[normal]">
             Welcome To Sally
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Candy Shop
           </p>
           <img
-            className="absolute w-[1440px] h-[366px] top-[1274px] left-0"
+            className="absolute w-full h-[366px] top-[1274px] left-0"
             alt="Vector"
             src="../assets/DesignArts/svg/vector1.svg"
           />
           <img
-            className="absolute w-[1440px] h-[911px] top-[419px] left-0"
+            className="vector2 w-full absolute h-[911px] top-[419px] "
             alt="Vector"
             src="../assets/DesignArts/svg/vector2.svg"
           />
-          <p className="absolute w-[305px] top-[263px] left-[932px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[12px] text-right tracking-[0] leading-[normal]">
+          <p className="absolute w-[305px] top-[263px]  md:left-[780px] lg:left-[800px] xl:left-[1000px] top-[250px] text-[12px] 2xl:left-[2030px] text-[19px] top-[293px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[12px] text-right tracking-[0] leading-[normal]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
             nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
           </p>
@@ -176,29 +176,9 @@
         </div>
       </div>
     </div>
-  </div>
+  
 </template>
 
-
-<style scoped>
-  .home {
-    max-width: 100vw;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 1440px) {
-    .firstlyr {
-      max-width: 1440px;
-    }
-  }
-
-  @media (min-width: 1921px) {
-    .firstlyr {
-      max-width: 1920px;
-    }
-  }
-
-</style>
 
 <script>
 export default {

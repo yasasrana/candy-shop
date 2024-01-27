@@ -11,7 +11,7 @@
           <img
             className="h-[327px] top-[590px] left-[564px] absolute w-[1440px]"
             alt="Vector"
-            src="https://c.animaapp.com/twwqjW46/img/vector.svg"
+            src="../assets/DesignArts/svg/vector4.svg"
           />
           <img
           className="absolute w-[1440px] h-[581px] top-0 left-[564px]"
@@ -25,7 +25,7 @@
             Our Speciality Sweets
           </div>
           <div class="absolute top-[1100px] right-[300px] grid grid-cols-3 gap-7">
-            <div v-for="(item, index) in products" :key="item.id">
+            <div v-for="(item, index) in paginatedItems" :key="item.id">
               <div className=" max-w-[320px]  h-[320px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
               <button @click="handleProductButtonClick(item)" className="w-[295px]  text-[24px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a]  leading-[normal]">
                 {{ item.title }}
@@ -38,17 +38,53 @@
             <img
             className="h-[366px] top-[618px] left-[564px] absolute w-[1440px]"
             alt="Vector"
-            src="https://c.animaapp.com/twwqjW46/img/vector-4.svg"
+            src="../assets/DesignArts/svg/vector5.svg"
           />
-          <div className="absolute w-[76px] top-[1906px] left-[1729px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
+         <!--  <div className="absolute w-[76px] top-[1906px] left-[1729px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] tracking-[0] leading-[normal]">
             1....10
           </div>
          
-          <img
-            className="absolute w-[33px] h-[33px] top-[1905px] left-[1794px]"
-            alt="Forward"
-            src="https://c.animaapp.com/twwqjW46/img/forward@2x.png"
-          />
+          <button
+          >
+            <img
+              className="absolute w-[33px] h-[33px] top-[1905px] left-[1794px]"
+              alt="Forward"
+              src="../assets/DesignArts/svg/Forward.png"
+            />
+          </button> -->
+          
+
+
+<nav className="absolute top-[2005px] left-[1594px] [font-family:'Boodle-Black-Regular',Helvetica]" aria-label="Page navigation example">
+  <ul class="inline-flex -space-x-px text-base h-10">
+    <li>
+      <button class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-primary bg-white border border-e-0 border-secondary-300 rounded-s-lg hover:bg-secondary-100 hover:text-secondary dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="goToPage(1)" :disabled="currentPage === 1">First</button>
+    </li>
+    <li>
+      <button class="flex items-center justify-center px-4 h-10 leading-tight text-primary bg-white border border-secondary-300 hover:bg-secondary-100 hover:text-secondary dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="prevPage" :disabled="currentPage === 1">Prev</button>
+    </li>
+    <li>
+      <span class="flex items-center justify-center px-4 h-10 leading-tight text-primary bg-white border border-secondary-300 hover:bg-secondary-100 hover:text-secondary dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Page {{ currentPage }} of {{ totalPages }}</span>
+    </li>
+    <li>
+      <button class="flex items-center justify-center px-4 h-10 leading-tight text-primary bg-white border border-secondary-300 hover:bg-secondary-100 hover:text-secondary dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="nextPage" :disabled="currentPage === totalPages">Next</button>
+    </li>
+    <li>
+    <button class="flex items-center justify-center px-4 h-10 leading-tight text-primary bg-white border border-secondary-300 rounded-e-lg hover:bg-secondary-100 hover:text-secondary dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="goToPage(totalPages)" :disabled="currentPage === totalPages">Last</button>
+    </li>
+    
+  </ul>
+</nav>
+
+            <!--   <div className="absolute top-[1905px] left-[1794px]">
+          <button class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="goToPage(1)" :disabled="currentPage === 1">First</button>
+          <button class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="prevPage" :disabled="currentPage === 1">Prev</button>
+
+          <span>Page {{ currentPage }} of {{ totalPages }}</span>
+
+          <button class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="nextPage" :disabled="currentPage === totalPages">Next</button>
+          <button class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" @click="goToPage(totalPages)" :disabled="currentPage === totalPages">Last</button>
+        </div> -->
           <div className="absolute w-[2036px] h-[535px] top-[353px] left-0">
             <div className="relative w-[1440px] h-[276px] left-[564px] bg-[url(https://c.animaapp.com/twwqjW46/img/vector-3.svg)] bg-[100%_100%]">
               <img
@@ -113,13 +149,21 @@
 
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+
+
 export default {
+  components:{
+  
+  },
   data() {
     return {
       Allproducts: [],
       products: [],
-      categories:[]
+      categories:[],
+      currentPage: 1,
+      itemsPerPage: 6 ,
+   
     };
   },
   async mounted(){
@@ -139,6 +183,16 @@ export default {
     }
     
   },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.products.length / this.itemsPerPage);
+    },
+    paginatedItems() {
+      const start = (this.currentPage - 1) * this.itemsPerPage;
+      const end = start + this.itemsPerPage;
+      return this.products.slice(start, end);
+    }
+  },
   methods: {
     handleProductButtonClick(item) {
       const productId = item.id; 
@@ -151,6 +205,26 @@ export default {
       this.products=newproducts;
       console.log(this.products)
     },
+    nextPage() {
+      
+      if (this.currentPage < this.totalPages) {
+        this.currentPage++;
+      }
+      setTimeout(() => {
+       
+      }, 2000);
+    },
+    prevPage() {
+      if (this.currentPage > 1) {
+        this.currentPage--;
+      }
+    },
+    goToPage(page) {
+      if (page > 0 && page <= this.totalPages) {
+        this.currentPage = page;
+      }
+    },
+  
   }
 };
 </script>
