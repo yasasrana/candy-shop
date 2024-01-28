@@ -153,8 +153,9 @@ import axios from 'axios';
 
 
 export default {
+  name: 'Products',
   components:{
-  
+   
   },
   data() {
     return {

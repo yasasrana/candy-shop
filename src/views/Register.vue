@@ -1,81 +1,131 @@
 <template>
-<div className="bg-[#f2f5ff] flex flex-row justify-center w-full">
-      <div className="bg-[#f2f5ff] overflow-hidden w-[1440px] h-[2925px]">
-        <div className="relative w-[2036px] h-[3836px] left-[-551px]">
-          <div className="absolute w-[1440px] h-[1349px] top-[2487px] left-[550px] [background:linear-gradient(180deg,rgb(198,238,253)_0%,rgba(230,111,175,0.41)_100%)]" />
-          <img
-            className="absolute w-[1440px] h-[1948px] top-[719px] left-[551px]"
-            alt="Union"
-            src="https://c.animaapp.com/mrbkHoV2/img/union.svg"
-          />
-          <div className="absolute top-[815px] left-[1190px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] tracking-[0] leading-[normal]">
-            Celebrate Your Birthday
-          </div>
-          <p className="absolute w-[540px] top-[906px] left-[1191px] [font-family:'Actor',Helvetica] font-normal text-[#001f3eb0] text-[20px] tracking-[0] leading-[normal]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
-          </p>
-          <div className="absolute w-[445px] h-[468px] top-[1359px] left-[716px] bg-white rounded-[20px]" />
-          <div className="absolute top-[1374px] left-[1185px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] tracking-[0] leading-[normal]">
-            Enjoy Our Seasonal Events
-          </div>
-          <p className="top-[1448px] absolute w-[540px] left-[1191px] [font-family:'Actor',Helvetica] font-normal text-[#001f3eb0] text-[20px] tracking-[0] leading-[normal]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
-          </p>
-          <div className="absolute w-[445px] h-[468px] top-[1929px] left-[716px] bg-white rounded-[20px]" />
-          <div className="absolute top-[1928px] left-[1185px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] tracking-[0] leading-[normal]">
-            Book for Private Events
-          </div>
-          <p className="top-[2018px] absolute w-[540px] left-[1191px] [font-family:'Actor',Helvetica] font-normal text-[#001f3eb0] text-[20px] tracking-[0] leading-[normal]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris vel ligula vulputate cursus. Sed
-            nec felis nec orci vestibulum auctor. Fusce euismod est vel ipsum laoreet, non aliquam libero suscipit.
-          </p>
-          <div className="absolute w-[445px] h-[468px] top-[817px] left-[716px] bg-white rounded-[20px]" />
-          <img
-            className="absolute w-[1440px] h-[764px] top-0 left-[551px] object-cover"
-            alt="Rectangle"
-            src="https://c.animaapp.com/mrbkHoV2/img/rectangle-32.png"
-          />
-          <div className="absolute w-[2036px] h-[535px] top-[541px] left-0">
-            <div className="relative w-[1440px] h-[276px] left-[551px] bg-[url(https://c.animaapp.com/mrbkHoV2/img/vector-2.svg)] bg-[100%_100%]">
-              <img
-                className="absolute w-[1440px] h-[268px] top-[8px] left-0"
-                alt="Vector"
-                src="https://c.animaapp.com/mrbkHoV2/img/vector-1.svg"
-              />
-              <img
-                className="absolute w-[1440px] h-[196px] top-[80px] left-0"
-                alt="Vector"
-                src="https://c.animaapp.com/mrbkHoV2/img/vector.svg"
-              />
+   <div 
+    class=" relative top-[100px] right-0 left-0  h-full items-center justify-center flex">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+
+        <div class="relative bg-white rounded-lg shadow">
+          
+            <div class="p-5">
+                <h3 class="text-2xl mb-0.5 font-medium"></h3>
+                <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+                <div class="text-center">
+                    <p class="mb-3 text-2xl font-semibold leading-5 text-slate-900">
+                        Sign up to your account
+                    </p>
+                    <p class="mt-2 text-sm leading-4 text-slate-600">
+                        You must be logged in to perform this action.
+                    </p>
+                </div>
+
+                <div class="mt-7 flex flex-col gap-2">
+
+                
+                    <button
+                        @click="signinwithGoogle"
+                        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 ">
+                        <img
+                            src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
+                            class="h-[18px] w-[18px] "
+                          
+                            >Continue with
+                        Google
+                    </button>
+
+
+                </div>
+
+                <div class="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
+                    <div class="h-px w-full bg-slate-200"></div>
+                    OR
+                    <div class="h-px w-full bg-slate-200"></div>
+                </div>
+
+
+                <form class="w-full" form @submit.prevent="signInWithEmailAndPassword">
+                  <label for="username" class="sr-only">Name</label>
+                    <input name="username" type="text"  required="true"
+                       v-model="username"
+                        class="block w-full rounded-lg border border-gray-300 mb-2 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-secondary focus:ring-offset-1"
+                        placeholder="User Name" value="">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input name="email" type="email"  required="true"
+                       v-model="email"
+                        class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-secondary  focus:ring-offset-1"
+                        placeholder="Email Address" value="">
+                    <label for="password" class="sr-only">Password</label>
+                    <input name="password" type="password"  required="true"
+                        v-model="password"
+                        class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-secondary  focus:ring-offset-1"
+                        placeholder="Password" value="">
+                    <p class="mb-3 mt-2 text-sm text-gray-500">
+                       
+                    </p>
+                    <button 
+                    @click="CreateUserWithEmailAndPassword"
+                        class="inline-flex w-full items-center justify-center rounded-lg bg-primary hover:bg-secondary p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400">
+                        Continue
+                    </button>
+                    <p v-if="message" >{{ message }}</p>
+                </form>
+
+                <div class="mt-6 text-center text-sm text-slate-600">
+                    Already have an account?
+                    <a href="/signin" class="font-medium text-secondary">Sign In</a>
+                </div>
             </div>
-          </div>
-          <div className="absolute top-[420px] left-[1461px] [text-shadow:7px_7px_6px_#00000059] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-white text-[96px] tracking-[0] leading-[normal]">
-            PARTIES
-          </div>
-          <div className="absolute top-[513px] left-[1324px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] text-right tracking-[0] leading-[normal]">
-            Celebrate Your Special Moments
-          </div>
         </div>
-      </div>
-    </div>
+    </div>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '../components/HelloWorld.vue'
 
+import {getAuth,updateProfile ,signInWithEmailAndPassword,createUserWithEmailAndPassword,signInWithPopup,GoogleAuthProvider} from "firebase/auth";
 export default {
-  name: 'Register',
-  components: {
-    HelloWorld
-  }
+  name: 'Signup',
+  data(){
+    return{
+      email:'',
+      password:'',
+      message:'',
+      username:''
+    }
+  },
+  methods:{
+    async CreateUserWithEmailAndPassword(){
+      const auth= getAuth();
+      try{
+        const userCredential = await createUserWithEmailAndPassword(auth, this.email, this.password);
+        const user = userCredential.user;
+        await updateProfile(user, {
+            displayName: this.username,
+        });
+
+        this.message ='Register in with email successful';
+        console.log(auth.currentUser)
+        this.$router.push('/');
+      }
+        catch(err){
+          console.error(err);
+          this.message =err;
+        }
+      },
+      async signinwithGoogle (){
+        const auth = getAuth();
+        try {
+          const provider = new GoogleAuthProvider();
+          await signInWithPopup(auth,provider);
+          this.message = 'Sign in with Google successfull';
+          this.$router.push('/');
+        } catch (error) {
+          console.error(error);
+          this.message= 'Sign in with Google failed';
+          
+        }
+      }
+    }
+
 }
+
 </script>

@@ -1,66 +1,121 @@
 <template>
-  <div class="home">
-    <h1 class="text-3xl text-red-700 font-bold underline">Sign in</h1>
-    <form @submit.prevent="signInWithEmailAndPassword">
-      <label>Email</label>
-      <input type="email" v-model="email"/>
-      <label>Password</label>
-      <input type="password" v-model="password"/>
-      <button @click="signInWithEmailAndPassword">
-      <img src="">
-      Sign in Email
-    </button>
-    </form>
-    <button @click="signinwithGoogle">
-      <img src="">
-      Sign in With Google
-    </button>
-    <br>
-    <br>
-    <p v-if="message" >{{ message }}</p>
+  <div class="relative top-[100px] right-0 left-0 h-full items-center justify-center flex">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+      <div class="relative bg-white rounded-lg shadow">
+        <div class="p-5">
+          <h3 class="text-2xl mb-0.5 font-medium"></h3>
+          <p class="mb-4 text-sm font-normal text-gray-800"></p>
+
+          <div class="text-center">
+            <p class="mb-3 text-2xl font-semibold leading-5 text-slate-900">Sign In to your account</p>
+            <p class="mt-2 text-sm leading-4 text-slate-600">You must be logged in to perform this action.</p>
+          </div>
+
+          <div class="mt-7 flex flex-col gap-2">
+            <button  @click="signinwithGoogle" class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1">
+              <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-[18px] w-[18px]" />Continue with Google
+            </button>
+          </div>
+
+          <div class="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
+            <div class="h-px w-full bg-slate-200"></div>
+            OR
+            <div class="h-px w-full bg-slate-200"></div>
+          </div>
+
+          <form class="w-full" form @submit.prevent="signInWithEmailAndPassword">
+            <label for="email" class="sr-only">Email address</label>
+            <input
+              name="email"
+              type="email"
+              autocomplete="email"
+              required="true"
+              v-model="email"
+              class="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-secondary focus:ring-offset-1"
+              placeholder="Email Address"
+              value=""
+            />
+            <label for="password" class="sr-only">Password</label>
+            <input
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required="true"
+              v-model="password"
+              class="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-secondary focus:ring-offset-1"
+              placeholder="Password"
+              value=""
+            />
+            <p class="mb-3 mt-2 text-sm text-gray-500">
+        
+            </p>
+            <button @click="signInWithEmailAndPassword" class="inline-flex w-full items-center justify-center rounded-lg bg-primary hover:bg-secondary p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-1 disabled:bg-gray-400">Continue</button>
+            <p v-if="message">{{ message }}</p>
+          </form>
+
+          <div class="mt-6 text-center text-sm text-slate-600">
+            Don't have an account?
+            <a href="/register" class="font-medium text-secondary">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-
-import {getAuth,signInWithEmailAndPassword,signInWithPopup,GoogleAuthProvider} from "firebase/auth";
+import {getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider} from "firebase/auth";
 export default {
-  name: 'RegisterView',
-  data(){
-    return{
-      email:'',
-      password:'',
-      message:'',
-    }
+  name: "Signin",
+  data() {
+    return {
+      email: "",
+      password: "",
+      message: "",
+    };
   },
-  methods:{
-    async signInWithEmailAndPassword(){
-      const auth= getAuth();
-      try{
+  methods: {
+    async signInWithEmailAndPassword() {
+      const auth = getAuth();
+      try {
         await signInWithEmailAndPassword(auth, this.email, this.password);
-        this.message ='Sign in with email successful';
-        this.$router.push('/profile');
-      }
-        catch(err){
-          console.error(err);
-          this.message ='Sign in with email failed';
-        }
-      },
-      async signinwithGoogle (){
-        const auth = getAuth();
-        try {
-          const provider = new GoogleAuthProvider();
-          await signInWithPopup(auth,provider);
-          this.message = 'Sign in with Google successfull';
-          this.$router.push('/');
-        } catch (error) {
-          console.error(error);
-          this.message= 'Sign in with Google failed';
-          
-        }
-      }
-    }
+        this.message = "Sign in with email successful";
+        this.$router.push("/");
+      } catch (error) {
+      
 
-}
+        const errorCode = error.code;
+        const errorMessage = error.message;
 
+        switch (errorCode) {
+          case "auth/wrong-password":
+            this.message = "Wrong password";
+            break;
+            case "auth/invalid-email":
+            this.message = "Invalid Email";
+            break;
+
+          case "auth/user-not-found":
+            this.message = "User not found";
+            break;
+
+          default:
+            (this.message = "Authentication error:", errorCode);
+        }
+      }
+    },
+    async signinwithGoogle() {
+      const auth = getAuth();
+      try {
+        const provider = new GoogleAuthProvider();
+        await signInWithPopup(auth, provider);
+        this.message = "Sign in with Google successfull";
+        this.$router.push("/");
+      } catch (error) {
+        console.error(error);
+        this.message = "Sign in with Google failed";
+      }
+    },
+  },
+};
 </script>
