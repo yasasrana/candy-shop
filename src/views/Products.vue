@@ -26,9 +26,9 @@
           </div>
           <div class="absolute top-[1100px] right-[300px] grid grid-cols-3 gap-7">
             <div v-for="(item, index) in paginatedItems" :key="item.id">
-              <div className=" max-w-[320px]  h-[320px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
+              <img :src="item.image"  className=" max-w-[320px]  h-[320px] bg-[#d9d9d9] rounded-[20px] shadow-[0px_4px_4px_#00000040]" />
               <button @click="handleProductButtonClick(item)" className="w-[295px]  text-[24px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a]  leading-[normal]">
-                {{ item.title }}
+                {{ item.title  }}
               </button>
                 <div className="w-[295px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#f4346c] text-[24px] tracking-[0] leading-[normal]">
                   Rs.{{ item.price }}
@@ -107,26 +107,22 @@
             Categories
           </div>
           <img
-            className="absolute w-[156px] h-[156px] top-[600px] left-[1308px] object-cover"
+            className="absolute w-[156px] h-[156px] top-[600px] left-[1181px] object-cover"
             alt="Rectangle"
             src="https://c.animaapp.com/twwqjW46/img/rectangle-20@2x.png"
           />
           <img
-            className="absolute w-[156px] h-[156px] top-[600px] left-[1506px]"
+            className="absolute w-[156px] h-[156px] top-[600px] left-[1355px]"
             alt="Rectangle"
             src="https://c.animaapp.com/twwqjW46/img/rectangle-21@2x.png"
           />
+       
           <img
-            className="absolute w-[156px] h-[156px] top-[608px] left-[1110px]"
-            alt="Rectangle"
-            src="https://c.animaapp.com/twwqjW46/img/rectangle-18@2x.png"
-          />
-          <img
-            className="absolute w-[145px] h-[116px] top-[628px] left-[912px] object-cover"
+            className="absolute w-[145px] h-[116px] top-[628px] left-[1007px] object-cover"
             alt="Candy"
             src="https://c.animaapp.com/twwqjW46/img/candy-shop7-1@2x.png"
           />
-          <div class="absolute  top-[768px] left-[912px] grid grid-cols-4 gap-16">
+          <div class="absolute  top-[768px] left-[1022px] grid grid-cols-4 gap-16">
             <div v-for="(item, index) in categories" :key="item.id">
               <button @click="handlecategoryButtonClick(item)"  className=" hover:text-[#f4346c] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[24px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
                 {{ item.title }}
@@ -150,8 +146,7 @@
 
 <script>
 import axios from 'axios';
-
-
+import titemimg from "../assets/photos/products/chocalate5.jpg"
 export default {
   name: 'Products',
   components:{
@@ -164,7 +159,7 @@ export default {
       categories:[],
       currentPage: 1,
       itemsPerPage: 6 ,
-   
+    
     };
   },
   async mounted(){
@@ -191,6 +186,7 @@ export default {
     paginatedItems() {
       const start = (this.currentPage - 1) * this.itemsPerPage;
       const end = start + this.itemsPerPage;
+      console.log(this.products[0])
       return this.products.slice(start, end);
     }
   },
@@ -225,6 +221,13 @@ export default {
         this.currentPage = page;
       }
     },
+     getImagePath(image) {
+      // Use dynamic import to load the image path asynchronously
+      const imagePath =  import(`../assets/photos/products/${image}`);
+      console.log(imagePath)
+      return imagePath.default; // Assuming the image path is the default export
+    },
+   
   
   }
 };

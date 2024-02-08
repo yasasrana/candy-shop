@@ -5,21 +5,24 @@
         "category_id": "1",
         "title": "Premium Dark Chocolate Bar",
         "description": "Indulge in the finest dark chocolate with a smooth and rich flavor.",
-        "price": "2500.00"
+        "price": "2500.00",
+        "image":"https://wepik.com/api/image/ai/9b34bc95-cfe3-412a-ac39-24475ed73cac?thumb=1"
       },
       {
         "id": "2",
         "category_id": "1",
         "title": "Hazelnut Crunch Milk Chocolate",
         "description": "Creamy milk chocolate with a crunchy layer of caramelized hazelnuts.",
-        "price": "2400.00"
+        "price": "2400.00",
+        "image":"https://wepik.com/api/image/ai/9b34bc95-a31f-44e3-81b1-77de063f7585?thumb=1"
       },
       {
         "id": "3",
         "category_id": "1",
         "title": "White Chocolate Fruit Medley",
         "description": "Delicious white chocolate with a burst of assorted fruity goodness.",
-        "price": "2600.00"
+        "price": "2600.00",
+        "image":"https://wepik.com/api/image/ai/9b34bc94-8b1f-49ab-9592-872ab1298733?thumb=1"
       },
       {
         "id": "4",
@@ -27,13 +30,16 @@
         "title": "Artisanal Chocolate Truffle Assortment",
         "description": "An exquisite assortment of chocolate truffles with assorted fillings.",
         "price": "2800.00"
+        ,
+        "image":"https://wepik.com/api/image/ai/9b34bc95-1740-4188-97fb-aa60f02aa3ad?thumb=1"
       },
       {
         "id": "5",
         "category_id": "1",
         "title": "Caramelized Almond Milk Chocolate",
         "description": "Velvety milk chocolate with crunchy caramelized almonds for a delightful texture.",
-        "price": "2700.00"
+        "price": "2700.00",
+        "image":"https://wepik.com/api/image/ai/9b34bce1-12c0-4523-b8e6-226d4ccd247a?thumb=1"
       },
       {
         "id": "6",
@@ -41,6 +47,8 @@
         "title": "Sea Salt Dark Chocolate Squares",
         "description": "Decadent dark chocolate squares infused with a hint of sea salt for a unique twist.",
         "price": "2600.00"
+        ,
+        "image":"https://wepik.com/api/image/ai/9b34bce1-c64e-4c0d-bd5a-231aa7f3f39c?thumb=1"
       },
       {
         "id": "7",
@@ -48,6 +56,8 @@
         "title": "Exotic Spice Chocolate Bars",
         "description": "Handcrafted chocolate bars with a blend of exotic spices for a sophisticated flavor.",
         "price": "2900.00"
+        ,
+        "image":"https://wepik.com/api/image/ai/9b34bce1-7197-4e32-a21a-e911f2929eec?thumb=1"
       },
       {
         "id": "8",
@@ -55,6 +65,8 @@
         "title": "Luxury Chocolate Assortment",
         "description": "A premium assortment of chocolates for the true connoisseur.",
         "price": "3000.00"
+        ,
+        "image":"https://wepik.com/api/image/ai/9b34bce0-6219-4b02-9702-689eac40a3e0?thumb=1"
       },
       {
         "id": "9",
@@ -62,6 +74,9 @@
         "title": "Milk Chocolate Caramel Pralines",
         "description": "Velvety milk chocolate pralines with a soft caramel center for a luscious experience.",
         "price": "2700.00"
+        ,
+        "image":"../assets/photos/products/chocalate8.jpg"
+        
       },
       {
         "id": "10",
@@ -69,153 +84,176 @@
         "title": "Dark Chocolate Orange Zest Delight",
         "description": "Dark chocolate with a twist of orange zest for a citrusy and sophisticated delight.",
         "price": "2800.00"
+        ,
+        "image":"../assets/photos/products/chocalate8.jpg"
       },
       {
         "id": "11",
         "category_id": "4",
         "title": "Classic Black Licorice Twists",
         "description": "Enjoy the timeless taste of classic black licorice twists.",
-        "price": "2200.00"
+        "price": "2200.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd52-af70-45d6-9a9b-5ae4cd843190?thumb=1"
       },
       {
         "id": "12",
         "category_id": "4",
         "title": "Strawberry Burst Red Licorice Laces",
         "description": "Red licorice laces bursting with the sweet flavor of ripe strawberries.",
-        "price": "2100.00"
+        "price": "2100.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "13",
         "category_id": "4",
         "title": "Fruity Licorice Bites Assortment",
         "description": "Soft and chewy licorice bites in assorted fruity flavors for a vibrant snacking experience.",
-        "price": "2300.00"
+        "price": "2300.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd52-2bf2-4ac6-b49b-8f55cb89edc5?thumb=1"
       },
       {
         "id": "14",
         "category_id": "4",
         "title": "Exotic Anise and Herb Licorice Twists",
         "description": "Experience licorice twists with a hint of anise and herbs for a unique and bold flavor.",
-        "price": "2400.00"
+        "price": "2400.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd52-8cda-41a0-a263-6a2cbf7a534c?thumb=1"
       },
       {
         "id": "15",
         "category_id": "4",
         "title": "Gourmet Licorice Ropes",
         "description": "Gourmet licorice ropes covered in a dusting of sweet sugar for a delightful sweetness.",
-        "price": "2300.00"
+        "price": "2300.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "16",
         "category_id": "4",
         "title": "Minty Licorice Bites",
         "description": "Licorice bites with a surprising burst of minty freshness for a refreshing taste.",
-        "price": "2200.00"
+        "price": "2200.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "17",
         "category_id": "4",
         "title": "Tangy Licorice Wheels",
         "description": "Tangy licorice wheels with a chewy and satisfying texture.",
-        "price": "2100.00"
+        "price": "2100.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "18",
         "category_id": "4",
         "title": "Sugar-Free Licorice Twists",
         "description": "Enjoy guilt-free snacking with sugar-free licorice twists.",
-        "price": "2300.00"
+        "price": "2300.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "19",
         "category_id": "4",
         "title": "Fruity Licorice Drops",
         "description": "Licorice drops with a surprising burst of fruity goodness.",
-        "price": "2400.00"
+        "price": "2400.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "20",
         "category_id": "4",
         "title": "Sour Licorice Straws",
         "description": "Sour licorice straws for those who crave a tangy twist.",
-        "price": "2500.00"
+        "price": "2500.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "21",
         "category_id": "3",
         "title": "Assorted Vibrant Jelly Beans",
         "description": "Assorted jelly beans with vibrant colors and a medley of fruity flavors.",
-        "price": "1800.00"
+        "price": "1800.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd9b-43b5-4a32-b777-c8ac118aec49?thumb=1"
       },
       {
         "id": "22",
         "category_id": "3",
         "title": "Tropical Fruit Gourmet Jelly Beans",
         "description": "Gourmet jelly beans in a variety of tropical fruit flavors for a taste of paradise.",
-        "price": "1900.00"
+        "price": "1900.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd9a-e5c5-4cf2-a35e-fdda9cde4a13?thumb=1"
       },
       {
         "id": "23",
         "category_id": "3",
         "title": "Fizzy Twist Jelly Beans",
         "description": "Jelly beans with a fizzy twist, perfect for a fun and exciting snacking experience.",
-        "price": "1700.00"
+        "price": "1700.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd9c-a8ef-4b00-9a2b-78791a0791e2?thumb=1"
       },
       {
         "id": "24",
         "category_id": "3",
         "title": "Classic Chewy Jelly Beans",
         "description": "Classic jelly beans with a sweet and chewy texture for a timeless treat.",
-        "price": "1600.00"
+        "price": "1600.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd9c-2453-49a2-b98c-48031354b1d8?thumb=1"
       },
       {
         "id": "25",
         "category_id": "3",
         "title": "Sour Burst Jelly Beans",
         "description": "Jelly beans with a burst of sourness to tantalize your taste buds.",
-        "price": "1700.00"
+        "price": "1700.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "26",
         "category_id": "3",
         "title": "Fruity and Creamy Mix Jelly Beans",
         "description": "Jelly beans in a mix of fruity and creamy flavors for a delightful and balanced taste.",
-        "price": "1800.00"
+        "price": "1800.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "27",
         "category_id": "3",
         "title": "Sugar-Free Delight Jelly Beans",
         "description": "Enjoy guilt-free snacking with sugar-free jelly beans.",
-        "price": "1900.00"
+        "price": "1900.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "28",
         "category_id": "3",
         "title": "Exotic Gourmet Jelly Beans",
         "description": "Jelly beans with a gourmet twist, featuring unique and exotic flavors.",
-        "price": "2000.00"
+        "price": "2000.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "29",
         "category_id": "3",
         "title": "Spicy and Sweet Surprise Jelly Beans",
         "description": "Jelly beans with a surprise assortment of spicy and sweet notes for a unique experience.",
-        "price": "2100.00"
+        "price": "2100.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "30",
         "category_id": "3",
         "title": "Playful Shape Jelly Beans",
         "description": "Jelly beans in fun and whimsical shapes for a playful and entertaining snacking experience.",
-        "price": "2200.00"
+        "price": "2200.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "31",
         "category_id": "2",
         "title": "Nostalgic Traditional Sweets Assortment",
         "description": "An assortment of traditional sweets with nostalgic flavors for a trip down memory lane.",
-        "price": "2000.00"
+        "price": "2000.00",
+        "image":"https://wepik.com/api/image/ai/9b34bd51-86e7-419c-a5c5-98520127778f?thumb=1"
       },
       {
         "id": "32",
@@ -257,10 +295,6 @@
       {
         "id": "1",
         "title": "chocolate"
-      },
-      {
-        "id": "2",
-        "title": "Sweets"
       },
       {
         "id": "3",

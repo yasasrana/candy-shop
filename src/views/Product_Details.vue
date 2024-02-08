@@ -20,9 +20,9 @@
           <div className="left-[296px] absolute w-[127px] h-[122px] top-[541px] rounded-[20px] border border-solid border-black" />
           <div className="left-[442px] absolute w-[127px] h-[122px] top-[541px] rounded-[20px] border border-solid border-black" />
           <img
-            className="absolute w-[375px] h-[476px] top-[22px] left-[213px] object-cover"
+            className="absolute w-[375px] h-[476px] top-[22px] left-[213px] rounded-[20px] shadow-[0px_4px_4px_#00000040] object-cover"
             alt="Element s"
-            src="https://c.animaapp.com/CY8cwYGc/img/2201-i518-025-s-m005-c12-1@2x.png"
+            :src="productimage"
           />
           <p className="absolute top-[205px] left-[735px] [font-family:'Boodle-Black-Regular',Helvetica] font-normal text-[#0a2d6a] text-[45px] text-right tracking-[0] leading-[normal]">
             {{product.title}}
@@ -75,11 +75,13 @@
 
 <script>
 import axios from 'axios';
+import { resolveTransitionHooks } from 'vue';
 export default {
   name: 'Product_Details',
   data() {
     return {
       product: {},
+      
     };
   },
   props: ['productId'],
@@ -87,6 +89,7 @@ export default {
     try {
       const response = await axios.get(`http://localhost:3000/products/${this.productId}`);
       this.product = response.data;
+      this.productimage=response.data.image
      // console.error(response.data);
     } catch (error) {
       console.error(error);
