@@ -174,16 +174,17 @@
 		</div>
 		    
 	</div>
+	<!-- <Loading1 :isLoading="true" /> -->
 </template>
 
 <script>
 import axios from 'axios'
-import titemimg from '../assets/photos/products/chocalate5.jpg'
 import jsonData from '../../data/home.json'
 import Product from '../components/product.vue'
+import Loading1 from '../components/Loading.vue'
 export default {
 	name: 'Products',
-	components: {Product},
+	components: {Product, Loading1},
 	data() {
 		return {
 			Allproducts: [],
