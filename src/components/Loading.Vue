@@ -1,12 +1,12 @@
 <template>
-	<div v-if="isLoading & loading1" className="loading">
+	<div v-if="isLoading" className="loading">
 		<img src="../assets/gifs/spinner.gif" />
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'Loading',
+	name: 'Loading1',
 	props: {
 		isLoading: Boolean
 	},
@@ -15,13 +15,7 @@ export default {
 			loading1: true
 		}
 	},
-	mounted() {
-		// Simulate a delay to represent the rendering time of your Vue application
-		setTimeout(() => {
-			// Set loading to false after the delay to indicate that the application has finished rendering
-			this.loading1 = false
-		}, 2000) // Adjust the timeout duration as needed
-	}
+	
 }
 </script>
 
@@ -32,10 +26,10 @@ export default {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: white
+	background: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  z-index:1000;
+  	z-index:1000;
 }
 </style>

@@ -174,7 +174,7 @@
 		</div>
 		    
 	</div>
-	<!-- <Loading1 :isLoading="true" /> -->
+<!-- 	<Loading1 :isLoading="Isloading" /> -->
 </template>
 
 <script>
@@ -192,7 +192,8 @@ export default {
 			categories: [],
 			currentPage: 1,
 			itemsPerPage: 6,
-			jsonData
+			jsonData,
+			Isloading:true
 		}
 	},
 	async mounted() {
@@ -210,6 +211,15 @@ export default {
 		} catch (error) {
 			console.log(error)
 		}
+
+		try {
+			setTimeout(() => {
+			this.Isloading = false
+		}, 2000) 
+		} catch (error) {
+			console.log(error)
+		}
+		
 	},
 	computed: {
 		totalPages() {
